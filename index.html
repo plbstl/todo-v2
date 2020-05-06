@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="description" content="mini todo app base version 2, with multiple future releases">
+	<meta name="keywords" content="todo, clean UI, dark mode, regular updates">
+	<title> TODO v2 </title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container text-light text-center py-5">
+	<header>
+		<div class="py-5 my2 header">
+			<h1 class="display-3"> TODO </h1>
+			<p class="lead version">version 2</p>
+		</div>
+		<!-- goto homepage -->
+		<a href="../" class="goto-homepage"> x </a>
+	</header>
+
+	<main>
+		<!-- search box -->
+		<form id="search" class="container d-none">
+			<input type="text" name="search" placeholder="search items" class="form-control">
+		</form>
+		<!-- todo list -->
+		<section class="text-justify my-5">
+			<ul class="list d-none">
+				<li class="todo mx-1 my-3 p-2"> buy milk -soya and almond- </li>
+				<li class="todo mx-1 my-3 p-2"> read my list with care and an open mind ... donot read this in a hurry as you'll
+					enter a quintessence part of your mind </li>
+				<li class="todo mx-1 my-3 p-2"> my potent yet pervious mind will lift u out of dysphoria </li>
+				<li class="todo mx-1 my-3 p-2"> you must be clean of anergy and cacophony as your spirits will reconnect with
+					the divine entities </li>
+				<li class="todo mx-1 my-3 p-2"> as u can never understand the mysteries of creation and vast ends of the
+					universe, u can never perceive to understand upto half of what goes on within this mind of mine </li>
+				<li class="todo mx-1 my-3 p-2"> look for my forex notebook </li>
+				<li class="todo mx-1 my-3 p-2"> i just made this shit up, these list items are less of "todos" and more of "true
+					that" </li>
+				<li class="todo mx-1 my-3 p-2"> bitch slap that bitch ass nigga </li>
+				<li class="todo mx-1 my-3 p-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt aliquid
+					quae harum voluptas sequi, recusandae alias illum aut pariatur consequatur amet animi neque quasi quo deleniti
+					id, cumque magnam? </li>
+				<li class="todo mx-1 my-3 p-2"> fuck piece of fuck shit </li>
+				<li class="todo mx-1 my-3 p-2"> badman badman dont listen to these bungees </li>
+				<li class="todo mx-1 my-3 p-2"> y'all know who the truth is ... nor go de whine yourself </li>
+				<li class="todo mx-1 my-3 p-2"> play for keeps and i got what you need ... dont play with me </li>
+				<li class="todo mx-1 my-3 p-2"> have to recreate that playlist ... pure vibrational energies only </li>
+				<li class="todo mx-1 my-3 p-2"> put in work till it works out </li>
+				<li class="todo mx-1 my-3 p-2"> worry about myself and get that ill out my system ... manne </li>
+				<li class="todo mx-1 my-3 p-2"> you got it "off the dome" n thats why u sound like my asshole when i poop or
+					fart </li>
+				<li class="todo mx-1 my-3 p-2"> u a girl and we're not related, i'll fuck ur mouth n your ass if u let me ...
+					it'll be a war on two fronts </li>
+				<li class="todo mx-1 my-3 p-2"> calm down b ... i'll settle with just d one sweet in the middle </li>
+				<li class="todo mx-1 my-3 p-2"> apply pressure between your thighs near where the perineal region be at, until
+					you bring out cream ... or water ... hopefully both, a nigga be thirsty baby girl </li>
+				<li class="todo mx-1 my-3 p-2"> chill out wit d goosebumps ... they just be words off the dome </li>
+				<li class="todo mx-1 my-3 p-2"> if u want the action ... a nigga stay strapped and ready though </li>
+				<li class="todo mx-1 my-3 p-2"> come holla at the homie ... yunno where the spot be at </li>
+				<li class="todo mx-1 my-3 p-2"> must you know everybody ... and why tf you nosy </li>
+				<li class="todo mx-1 my-3 p-2"> smile like a saint but d center's mine </li>
+				<li class="todo mx-1 my-3 p-2"> pressure of the world on my shoulders but i gotta carry on ... i'm the universal
+					plug, socket n pure divine energy adapter </li>
+				<li class="todo mx-1 my-3 p-2"> i need a tropical boo .... she gotta know to cook good and set in da freak mood
+				</li>
+				<li class="todo mx-1 my-3 p-2"> she eyeing me across d room n honestly she stunnin ... but it'll still take a
+					bag to get the bitch on it </li>
+				<li class="todo mx-1 my-3 p-2"> everybody got they demons ... na lie demon pass demon </li>
+				<li class="todo mx-1 my-3 p-2"> i'm not a good guy just a nice dude ... really gotta stay on my good side </li>
+				<li class="todo mx-1 my-3 p-2"> i choose happiness over love and my dreams over the bag ... 'the bag' part of my
+					dreams already </li>
+				<li class="todo mx-1 my-3 p-2"> practice self love b ... it be the best love </li>
+				<li class="todo mx-1 my-3 p-2"> december baby, golden boy, a real one, papi chulo, gorgeous mf ... what else
+				</li>
+				<li class="todo mx-1 my-3 p-2"> say you used to know me like i give af bout an old friend </li>
+				<li class="todo mx-1 my-3 p-2"> only talk to bosses n not the second in commandd </li>
+				<li class="todo mx-1 my-3 p-2"> remember all that you write here doesnt stick because no connected database yet
+					... maybe it'll be a feature in version 3 though </li>
+				<li class="todo mx-1 my-3 p-2"> and NO i'm not on jet fuel or sour diesel biiattcch! </li>
+				<li class="todo mx-1 my-3 p-2"> oh and you cant select my shit to copy and paste ... this high quality content
+					aint for free for real, it stays here ho </li>
+				<li class="todo mx-1 my-3 p-2"> if a nigga say my name he da hot shit, and if i say a nigga name ... he still
+					tha hot shit bitch * </li>
+				<li class="todo mx-1 my-3 p-2"> being dumb asf is one thing but surrounding yourself with people who are also
+					dumb asf is just... </li>
+				<li class="todo mx-1 my-3 p-2"> niggas be cookin culinary in da kitchen while i be baking pastries ... pass me
+					the cream homie i want all of it </li>
+				<li class="todo mx-1 my-3 p-2"> i'm vegan and nigerian ... if u know, u know .. if dnt u know, u a dumb fuck
+				</li>
+				<li class="todo mx-1 my-3 p-2"> i'm all 'bout that GRREEEEENN!! </li>
+				<li class="todo mx-1 my-3 p-2"> if u read this far and not skip or skipped a few, then i luv d fact that i had
+					ur attention for so long and i deserve your heart </li>
+				<li class="todo mx-1 my-3 p-2"> woulda added more but i got codes to run n stuff to do n btw ... this was all
+					off tha dome </li>
+				<li class="todo mx-1 my-3 p-2"> add yours below lets see what u come up wit </li>
+				<li class="todo mx-1 my-3 p-2"> go stream 'Melanin' by Tucci </li>
+				<li class="todo mx-1 my-3 p-2"> its pronounced Tucci as in 'Gucci' not 'Lucy' lol </li>
+				<li class="todo mx-1 my-3 p-2"> also, if u need extreme quality musical content ... i'm your socket, just dnt
+					plug in every applicance </li>
+				<li class="todo mx-1 my-3 p-2"> please donot post d link to this ... u can screenshot though but not wit the
+					link in it </li>
+				<li class="todo mx-1 my-3 p-2"> peep the custom scrollbar :) </li>
+				<li class="no-todo p-4 text-center d-none"> no todo found :( </li>
+			</ul>
+		</section>
+		<!-- add todo -->
+		<form id="add" class="mb-5 pb-5 d-none">
+			<input type="text" placeholder="add todo" class="form-control">
+		</form>
+		<!-- add checkbox code snippet -->
+		<input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
+	</main>
+
+	<footer class="my-5">
+		<p> no animations in my projects yet </p>
+		<p> focusing more on javascript </p>
+		<p> that is why the pages aren't even in php </p>
+		<p> php is really the plug </p>
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
