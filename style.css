@@ -6,16 +6,23 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body {
-	background: #111;
-	user-select: none;
-}
-
 a:hover,
 a:active {
 	color: wheat;
 	text-decoration: none;
 }
+
+body {
+	background: #111;
+	user-select: none;
+}
+
+footer p {
+	font-size: 0.88rem;
+	font-family: monospace;
+}
+
+html {scroll-behavior: smooth}
 
 input[type] {
 	background: #222;
@@ -29,9 +36,24 @@ input[type]:focus {
 	color: snow;
 }
 
-footer p {
-	font-size: 0.88rem;
-	font-family: monospace;
+span.scroll-to-top {
+	border-radius: 10%;
+	box-shadow: 0 0 2px #333;
+	cursor: pointer;
+	padding: 0.8rem;
+	position: fixed;
+	right: 1rem;
+	bottom: 4rem;
+}
+
+span.scroll-to-bottom {
+	border-radius: 10%;
+	box-shadow: 0 0 2px #333;
+	cursor: pointer;
+	padding: 0.8rem;
+	position: fixed;
+	right: 1rem;
+	bottom: 1.7rem;
 }
 
 .goto-homepage {

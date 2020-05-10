@@ -46,9 +46,14 @@ add.addEventListener('submit', e => {
 	add.reset()
 })
 
+// scroll to top and bottom
+document.querySelector('span.scroll-to-top').addEventListener('click', () => scrollTo(0,0))
+document.querySelector('span.scroll-to-bottom').addEventListener('click', () => scrollTo(0, 10000000))
+
+// hide and unhide the list
+document.querySelector('#toggle').addEventListener('click', () => document.querySelector('section').classList.toggle('d-none'))
+
 // exit intro screen
 setTimeout(() => {
-	add.classList.remove('d-none')
-	search.classList.remove('d-none')
-	list.classList.remove('d-none')
+	document.querySelector('main').removeAttribute('class')
 }, 3000)

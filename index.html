@@ -25,14 +25,14 @@
 		<a href="../" class="goto-homepage"> x </a>
 	</header>
 
-	<main>
+	<main class="d-none"
 		<!-- search box -->
-		<form id="search" class="container d-none">
+		<form id="search">
 			<input type="text" name="search" placeholder="search items" class="form-control">
 		</form>
 		<!-- todo list -->
 		<section class="text-justify my-5">
-			<ul class="list d-none">
+			<ul class="list">
 				<li class="todo mx-1 my-3 p-2"> buy milk -soya and almond- </li>
 				<li class="todo mx-1 my-3 p-2"> read my list with care and an open mind ... donot read this in a hurry as you'll
 					enter a quintessence part of your mind </li>
@@ -108,18 +108,21 @@
 				<li class="todo mx-1 my-3 p-2"> please donot post d link to this ... u can screenshot though but not wit the
 					link in it </li>
 				<li class="todo mx-1 my-3 p-2"> peep the custom scrollbar :) </li>
+				<li class="todo mx-1 my-3 p-2"> peep the invisible buttons at the bottom right :) </li>
 				<li class="no-todo p-4 text-center d-none"> no todo found :( </li>
 			</ul>
 		</section>
 		<!-- add todo -->
-		<form id="add" class="mb-5 pb-5 d-none">
+		<form id="add">
 			<input type="text" placeholder="add todo" class="form-control">
 		</form>
 		<!-- add checkbox code snippet -->
-		<input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
+		<input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch m-5"></label>
+		<span class="scroll-to-top"></span>
+		<span class="scroll-to-bottom"></span>
 	</main>
 
-	<footer class="my-5">
+	<footer>
 		<p> no animations in my projects yet </p>
 		<p> focusing more on javascript </p>
 		<p> that is why the pages aren't even in php </p>
